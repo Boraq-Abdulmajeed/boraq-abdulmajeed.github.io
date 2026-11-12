@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boraq-abdulmajeed.github.io/sitemap.xml

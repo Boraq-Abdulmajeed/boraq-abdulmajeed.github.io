@@ -17,7 +17,7 @@ thumbnail and the project page's player are made from it automatically. Change `
 - `og.png`: the picture shown when the link is shared; `favicon.svg`: the tab icon
 
 ## Publishing and updating (GitHub Pages)
-Create a public repository named `Bojacks1.github.io` on github.com, upload these files (drag them in), and in
+Create a public repository named `boraq-abdulmajeed.github.io` on github.com, upload these files (drag them in), and in
 Settings > Pages choose "Deploy from a branch", branch `main`, folder `/ (root)`. The site is then live at
-https://bojacks1.github.io. To change something later, edit the file here and upload it again (it replaces
+https://boraq-abdulmajeed.github.io. To change something later, edit the file here and upload it again (it replaces
 the old one); the change shows up within a minute or two.
