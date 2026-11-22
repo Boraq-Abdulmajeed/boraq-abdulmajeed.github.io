@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<title>Freedoom for Playdate: Boraq Abdulmajeed</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Freedoom for Playdate: the classic Doom engine, aimed with the crank">
+<meta property="og:description" content="The classic Doom engine on the Playdate with Freedoom's free levels and monsters. The crank aims. Free, with its full source code.">
+<meta property="og:image" content="https://boraq-abdulmajeed.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://boraq-abdulmajeed.github.io/freedoom.html">
+<meta name="description" content="The classic Doom engine on the Playdate with Freedoom's free levels and monsters. The crank aims. Free, with its full source code.">
+<style>
+  .cl-card { image-rendering: pixelated; width: 100%; max-width: 700px; border-radius: 6px; margin: 28px 0 8px; background: #fff; }
+  .cl-steps { list-style: none; counter-reset: step; display: grid; gap: 16px; margin: 26px 0 8px; max-width: 40em; }
+  .cl-steps li { counter-increment: step; padding-left: 52px; position: relative; color: #cfcac0; }
+  .cl-steps li::before { content: counter(step); position: absolute; left: 0; top: -2px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; color: var(--accent); font-family: var(--serif); font-size: 1.2rem; }
+  .cl-steps b { color: var(--ink); font-weight: 500; }
+  .cl-downloads { display: flex; flex-wrap: wrap; gap: 14px; margin: 26px 0 10px; }
+  .cl-downloads a { display: block; padding: 14px 22px; border: 1px solid var(--line); transition: border-color .2s, color .2s; }
+  .cl-downloads a:hover { border-color: var(--accent); color: var(--accent); }
+  .cl-downloads small { display: block; color: var(--ink-dim); font-size: .75rem; margin-top: 3px; }
+  .cl-faq h3 { font-family: var(--serif); font-weight: 400; font-size: 1.5rem; margin: 30px 0 8px; }
+  .cl-faq p, .cl-prose p { color: #cfcac0; max-width: 40em; margin-bottom: 12px; }
+  .shots { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0 8px; }
+  .shots img { image-rendering: pixelated; width: 100%; max-width: 400px; border-radius: 6px; background: #fff; }
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html">Boraq Abdulmajeed</a>
+  <nav><ul>
+    <li><a href="index.html#work" data-n="work">Work</a></li>
+    <li><a href="games.html" data-n="games" class="here">Games</a></li>
+    <li><a href="about.html" data-n="about">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul></nav>
+</header>
+
+<section class="block" style="padding-top:150px">
+  <p class="eyebrow">Free game for Playdate</p>
+  <h2 class="title">Freedoom</h2>
+  <div class="cl-prose">
+    <p style="margin-top:18px">The classic Doom engine, running on the Playdate, with the crank to aim. The levels, monsters and art are Freedoom's: a free, community-made replacement for the original game's data, so everything here can be shared.</p>
+    <p>Getting a game made for 1990s PCs onto a small handheld meant new work: the 256-colour picture is turned into 1-bit with dithering and automatic exposure, the 28 MB of game data is read in small pieces, and long loading jobs pause so the Playdate never thinks the game has frozen.</p>
+  </div>
+  <div class="shots">
+    <img src="freedoom-title.png" alt="Freedoom's title screen on the Playdate, in 1-bit">
+    <img src="freedoom-fireball.png" alt="A fireball flying at the player down a corridor">
+    <img src="freedoom-monster.png" alt="A monster standing in a doorway">
+    <img src="freedoom-door.png" alt="A room with a tall door, the status bar along the bottom">
+  </div>
+
+  <div class="cl-downloads">
+    <a href="Freedoom-Playdate.zip" download>Download for Playdate<small>Freedoom.pdx, about 11 MB</small></a>
+    <a href="Freedoom-Playdate-source.zip" download>Source code<small>GPL, about 0.7 MB</small></a>
+  </div>
+  <p class="status">Version 1.0</p>
+
+  <h3 style="font-family:var(--serif);font-weight:400;font-size:2rem;margin-top:48px">How to play</h3>
+  <ol class="cl-steps">
+    <li><b>Install it.</b> Upload <b>Freedoom-Playdate.zip</b> at play.date/account/sideload, or reboot the Playdate to Data Disk (Settings, System), copy <b>Freedoom.pdx</b> into <b>Games</b> and eject. The first start takes a few seconds.</li>
+    <li><b>Aim with the crank, fire with Ⓐ.</b> A quick tap of Ⓑ opens doors and presses switches; holding Ⓑ walks forward, so one thumb and the crank are enough. The D-pad walks and strafes too.</li>
+    <li><b>Ⓐ and Ⓑ together:</b> a tap shows the map; holding them opens the game's own menu (new game, save, load, options). The Playdate's menu has the next weapon, the control style and how fast the crank turns you (1 to 5; 3 is normal).</li>
+  </ol>
+
+  <div class="cl-faq">
+    <h3>Is this Doom?</h3>
+    <p>It is Doom's engine (id Software released its source code in 1997), with Freedoom's free game data instead of the original's. If you own Doom, you can copy your own <b>doom.wad</b> into the game's data folder (<b>Data/com.braq.freedoom</b>, in Data Disk mode) and play the original. It is not included and may not be shared.</p>
+    <h3>How fast does it run?</h3>
+    <p>About 13 to 25 frames a second on a real Playdate, depending on the scene. There is no music yet, only sound effects.</p>
+    <h3>Where is the source?</h3>
+    <p>The engine is under the GNU GPL, so the whole game's source, including everything written for the Playdate, is in the download above. It builds the game from scratch with the Playdate SDK.</p>
+  </div>
+  <p style="margin-top:36px;color:var(--ink-dim);font-size:.9rem">Made by Boraq Abdulmajeed. Built on doomgeneric (GPL) and Freedoom (BSD licence). Doom is a trademark of id Software; Playdate is a trademark of Panic Inc. This project is not made or endorsed by id Software, Bethesda or Panic.</p>
+</section>
+<footer>© 2026 Boraq Abdulmajeed</footer>
+<script src="site.js"></script>
+</body>
+</html>
